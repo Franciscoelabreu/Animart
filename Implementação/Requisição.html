@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+      <meta charset="UTF-8">
+      <meta content="Francisco Abreu" name="author">
+      <meta content="Anime, mangá, shop, online, art" name="keywords">
+      <meta content="Loja online onde pode comprar mangás e arte relativa a anime." name="description">
+
+      <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+      <!-- Bootstrap v4.6.0 -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- Font Awesome Free 5.15.3 -->
+      <link href="fontawesome-free/css/all.css" rel="stylesheet">
+
+      <!-- Colocar aqui a ligação para outros ficheiros de CSS necessários ao MP -->
+
+
+
+
+
+
+
+
+
+
+      <!-- ficheiro de estilos definidos pela equipa ou por terceiros e necessários ao funcionamento do MP -->
+      <link href="css/os_meus_estilos.css" rel="stylesheet">
+
+      <title>Animart/Requisição</title>
+</head>
+<body>
+
+<!-- Barra de Navegação topo -->
+<div class="navbar bg-light container-fluid fixed-top shadow-lg">
+      <div class="col-6">
+            <a href="index.html">
+                  <img src="imgs/logo.png" alt="Logo">
+            </a>
+      </div>
+
+      <div class="col-6 text-right mt-3">
+            <form id="searchform" method="get" action="index.html"></form>
+            <label>
+                  <input class="no-outline" type="search" placeholder="pesquisa" size="8" maxlength="30"/>
+            </label>
+            <i class="fas fa-search icones pl-1 pl-sm-1"></i>
+
+            <a href="CestoCompras.html">
+                  <i class="fas fa-shopping-bag icones px-2 d-none d-sm-inline"></i>
+            </a>
+
+            <a href="Login.html">
+                  <i class="fas fa-user icones px-2 d-none d-sm-inline"></i>
+            </a>
+      </div>
+</div>
+
+
+
+
+<!-- Requisição com carousel -->
+<section class="Login">
+      <h1 class="font-weight-bold titulo" style="color: #9c3a38">Requisição</h1>
+      <h6 class="titulo mb-5">Uma peça única, pelo seu artista favorito.</h6>
+
+      <div class="container">
+            <div class="row no-gutters formulario" style="background-color: #FFFFFF">
+                  <div class="col-lg-7 px-5 pt-5">
+                        <form action="https://tictake.web.ua.pt/formresult.php" method="post">
+
+                              <!--Nome-->
+                              <div class="form-row">
+                                    <div class="col-lg-7">
+                                          <label>
+                                                <input type="text" placeholder="Nome" class="form-control my-3 p-4">
+                                          </label>
+                                    </div>
+                              </div>
+
+
+                              <!--Número de telemóvel-->
+                              <div class="form-row">
+                                    <div class="col-lg-7">
+                                          <label>
+                                                <input type="text" placeholder="Número de telemóvel" class="form-control my-3 p-4">
+                                          </label>
+                                    </div>
+                              </div>
+
+                              <label for="peças">
+
+                                    <select id="peças" class="box piece mb-5 col-md-6 col-8" style="padding: 10px">
+                                          <option selected>Tipo de peça</option>
+                                          <option value="Arte Digital">Arte Digital</option>
+                                          <option value="Tela">Tela</option>
+                                          <option value="Woodcut">Woodcut</option>
+                                    </select>
+                              </label>
+
+
+                              <!---Descrição-->
+                              <div class="form-row">
+                                    <div class="col-lg-7 my-5">
+                                          <label for="descrição">Descrição da ideia</label>
+                                          <textarea class="screencorrect expand" id="descrição" name="descrição" rows="1" cols="33"></textarea>
+                                    </div>
+                              </div>
+
+                              <!--Botão Confirmar-->
+                              <div class="form-row">
+                                    <div class="col-lg-7">
+                                          <button type="submit" placeholder="Palavra-passe" class="btnlog mt-3 mb-5">Confirmar</button>
+                                    </div>
+                              </div>
+                        </form>
+                  </div>
+
+                  <!--Carousel-->
+                  <div class="col-lg-5">
+                        <div id="demo" class="carousel slide" data-ride="carousel">
+
+                              <!-- Indicators -->
+                              <ul class="carousel-indicators">
+                                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                    <li data-target="#demo" data-slide-to="1"></li>
+                                    <li data-target="#demo" data-slide-to="2"></li>
+                              </ul>
+
+                              <!-- The slideshow -->
+                              <div class="carousel-inner formularioimg">
+                                    <div class="carousel-item active correct">
+                                          <img src="imgs/carousel1.webp" alt="Ani girl" class="img-fluid correct">
+                                    </div>
+                                    <div class="carousel-item">
+                                          <img src="imgs/carousel2.webp" alt="All Might" class="img-fluid correct">
+                                    </div>
+                                    <div class="carousel-item">
+                                          <img src="imgs/carousel3.webp" alt="Ani girl" class="img-fluid correct">
+                                    </div>
+                              </div>
+
+                              <!-- Left and right controls -->
+                              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                              </a>
+                              <a class="carousel-control-next" href="#demo" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                              </a>
+
+                        </div>
+                  </div>
+            </div>
+      </div>
+</section>
+
+
+
+
+
+
+<!-- Barra de Navegação fundo -->
+<div class="navbar bg-light container-fluid fixed-bottom d-sm-none shadow-lg">
+      <div class="col-6 text-left">
+            <a href="CestoCompras.html">
+                  <i class="fas fa-shopping-bag icones px-2"></i>
+            </a>
+      </div>
+      <div class="col-6 text-right">
+            <a href="Login.html">
+                  <i class="fas fa-user icones px-2"></i>
+            </a>
+      </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="footer mt-5">
+      <div class="container">
+            <div class="row">
+                  <div class="footer-col">
+                        <h4>ANIMART</h4>
+                        <ul>
+                              <a style="color: white">Loja online de venda de mangás e arte relativa a anime.</a>
+                        </ul>
+                  </div>
+                  <div class="footer-col">
+                        <h4>Ligações Rápidas</h4>
+                        <ul>
+                              <li><a href="Manga.html">Mangás</a></li>
+                              <li><a href="Arte.html">Arte</a></li>
+                              <li><a href="Requisição.html">Requisição personalizada</a></li>
+                        </ul>
+                  </div>
+                  <div class="footer-col">
+                        <h4>Segue-nos!</h4>
+                        <div class="social-links">
+                              <a><i class="fab fa-facebook-f"></i></a>
+                              <a href="https://www.instragram.com/franciscoelabreu"><i class="fab fa-instagram"></i></a>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</footer>
+
+
+<!-- jQuery 3.5.1 -->
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<!--Popper 2.9.2 -->
+<script src="js/popper.min.js"></script>
+<!-- Bootstrap v4.6.0 -->
+<script src="js/bootstrap.min.js"></script>
+
+<!--Colocar aqui as ligações para outros ficheiros de JavaScript-->
+
+</body>
+</html>
+
+<script>
+    // Colocar aqui eventuais códigos JavaScript/jQuery
+
+
+</script>

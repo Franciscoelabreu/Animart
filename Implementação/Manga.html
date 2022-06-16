@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+      <meta charset="UTF-8">
+      <meta content="Francisco Abreu" name="author">
+      <meta content="Anime, mangá, shop, online, art" name="keywords">
+      <meta content="Loja online onde pode comprar mangás e arte relativa a anime." name="description">
+
+      <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+      <!-- Bootstrap v4.6.0 -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- Font Awesome Free 5.15.3 -->
+      <link href="fontawesome-free/css/all.css" rel="stylesheet">
+
+      <!-- Colocar aqui a ligação para outros ficheiros de CSS necessários -->
+
+
+      <!-- ficheiro de estilos definidos pela equipa ou por terceiros e necessários ao funcionamento -->
+      <link href="css/os_meus_estilos.css" rel="stylesheet">
+
+      <title>Animart/Mangás</title>
+</head>
+<body>
+
+<!-- Barra de Navegação topo -->
+<div class="navbar bg-light container-fluid fixed-top shadow-lg">
+      <div class="col-6">
+            <a href="index.html">
+                  <img src="imgs/logo.png" alt="Logo">
+            </a>
+      </div>
+      <div class="col-6 text-right mt-3">
+            <form id="searchform" method="get" action="index.html"></form>
+            <label>
+                  <input class="no-outline" type="search" placeholder="pesquisa" size="8" maxlength="30"/>
+            </label>
+            <i class="fas fa-search icones pl-1 pl-sm-1"></i>
+
+            <a href="CestoCompras.html">
+                  <i class="fas fa-shopping-bag icones px-2 d-none d-sm-inline"></i>
+            </a>
+
+            <a href="Login.html">
+                  <i class="fas fa-user icones px-2 d-none d-sm-inline"></i>
+            </a>
+      </div>
+</div>
+
+<!-- filtro -->
+<div class="container-fluid mt-100">
+      <div class="row">
+            <div class="col-sm-3 col-12">
+                  <div class="card position-sticky" style="top: 100px">
+                        <article class="filter-group">
+                              <header class="card-header"><a href="#" data-toggle="collapse"
+                                                             data-target="#collapse_aside1" data-abc="true"
+                                                             aria-expanded="false" class="collapsed"> <i
+                                      class="icon-control fa fa-chevron-down"></i>
+                                    <h6 class="title">Categorias </h6>
+                              </a></header>
+                              <div class="filter-content collapse" id="collapse_aside1">
+                                    <div class="card-body">
+                                          <ul class="list-menu">
+                                                <li><a href="#" data-abc="true">Shonen </a></li>
+                                                <li><a href="#" data-abc="true">Shojo </a></li>
+                                                <li><a href="#" data-abc="true">Seinen</a></li>
+                                                <li><a href="#" data-abc="true">Josei</a></li>
+                                                <li><a href="#" data-abc="true">Kodomomuke</a></li>
+                                          </ul>
+                                    </div>
+                              </div>
+                        </article>
+                        <article class="filter-group">
+                              <header class="card-header"><a href="#" data-toggle="collapse"
+                                                             data-target="#collapse_aside2" data-abc="true"
+                                                             aria-expanded="false" class="collapsed"> <i
+                                      class="icon-control fa fa-chevron-down"></i>
+                                    <h6 class="title">Preço</h6>
+                              </a></header>
+                              <div class="filter-content collapse" id="collapse_aside2" style="">
+                                    <div class="card-body"><label>
+                                          <input type="range" class="custom-range" min="0" max="100" name="">
+                                    </label>
+                                          <div class="form-row">
+                                                <div class="form-group col-md-6"><label>Min</label> <label>
+                                                      <input class="form-control" placeholder="$0" type="number">
+                                                </label></div>
+                                                <div class="form-group text-right col-md-6"><label>Max</label> <label>
+                                                      <input class="form-control" placeholder="$1,0000" type="number">
+                                                </label></div>
+                                          </div>
+                                          <a href="#"
+                                             class="highlight-button btn btn-medium button xs-margin-bottom-five"
+                                             data-abc="true">Aplicar</a>
+                                    </div>
+                              </div>
+                        </article>
+
+                        <article class="filter-group">
+                              <header class="card-header"><a href="#" data-toggle="collapse"
+                                                             data-target="#collapse_aside4" data-abc="true"
+                                                             class="collapsed" aria-expanded="false"> <i
+                                      class="icon-control fa fa-chevron-down"></i>
+                                    <h6 class="title">Mais</h6>
+                              </a></header>
+                              <div class="filter-content collapse" id="collapse_aside4" style="">
+                                    <div class="card-body"><label class="custom-control"> <input type="checkbox"
+                                                                                                 checked=""
+                                                                                                 class="custom-control-input">
+                                          <div class="custom-control-label">Mais vendidos</div>
+                                    </label> <label class="custom-control"> <input type="checkbox" checked=""
+                                                                                   class="custom-control-input">
+                                          <div class="custom-control-label">Clássicos</div>
+                                    </label> <label class="custom-control"> <input type="checkbox" checked=""
+                                                                                   class="custom-control-input">
+                                          <div class="custom-control-label">Terminados</div>
+                                    </label> <label class="custom-control"> <input type="checkbox" checked=""
+                                                                                   class="custom-control-input">
+                                          <div class="custom-control-label">Em atividade</div>
+                                    </label></div>
+                              </div>
+                        </article>
+                  </div>
+            </div>
+            <!--primeira linha de produtos 3-->
+                  <div class="col-sm-3 col-12">
+                        <div class="card cardview">
+                              <div class="produtoView align-items-center p-2 text-center">
+                                    <span class="fas fa-heart fa-2x fav"></span>
+                                    <img src="imgs/mangaBoku.jfif" alt="manga Boku" class="img-fluid imageview">
+                                    <h5>Boku no Hero - Vol.15</h5>
+                                    <div class="custo mt-3 text-dark">
+                                          <span>10.00€</span>
+                                    </div>
+                                    <div class="p-2 addcesto text-center mt-3">
+                                          <span class="text-uppercase">Adicionar ao cesto</span>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="col-md-3 col-12">
+                        <div class="card cardview">
+                              <div class="produtoView align-items-center p-2 text-center">
+                                    <span class="fas fa-heart fa-2x fav"></span>
+                                    <img src="imgs/mangaTokyo.jpg" alt="manga Tokyo" class="img-fluid imageview">
+                                    <h5>Tokyo Ghoul - Vol.13</h5>
+                                    <div class="custo mt-3 text-dark">
+                                          <span>9.00€</span>
+                                    </div>
+                                    <div class="p-2 addcesto text-center mt-3">
+                                          <span class="text-uppercase">Adicionar ao cesto</span>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="col-md-3 col-12">
+                        <div class="card cardview">
+                              <div class="produtoView align-items-center p-2 text-center">
+                                    <span class="fas fa-heart fa-2x fav"></span>
+                                    <img src="imgs/mangaBleach.jfif" alt="manga Bleach" class="img-fluid imageview">
+                                    <h5>Bleach - Vol.20</h5>
+                                    <div class="custo mt-3 text-dark">
+                                          <span>9.00€</span>
+                                    </div>
+                                    <div class="p-2 addcesto text-center mt-3">
+                                          <span class="text-uppercase">Adicionar ao cesto</span>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+
+            <div class="col-sm-3"></div> <!-- alinhar cards -->
+
+            <!-- segunda linha de produtos -->
+            <div class="col-md-3 col-12 mt-md-5">
+                  <div class="card cardview">
+                        <div class="produtoView align-items-center p-2 text-center">
+                              <span class="fas fa-heart fa-2x fav"></span>
+                              <img src="imgs/mangaJujutsu.jfif" alt="manga Jujutsu Kaisen" class="img-fluid imageview">
+                              <h5>Jujutsu Kaisen - Vol.1</h5>
+                              <div class="custo mt-3 text-dark">
+                                    <span>12.00€</span>
+                              </div>
+                              <div class="p-2 addcesto text-center mt-3">
+                                    <span class="text-uppercase">Adicionar ao cesto</span>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <div class="col-md-3 col-12 mt-md-5">
+                  <div class="card cardview">
+                        <div class="produtoView align-items-center p-2 text-center">
+                              <span class="fas fa-heart fa-2x fav"></span>
+                              <img src="imgs/mangaSouleater.jfif" alt="manga Soul Eater" class="img-fluid imageview">
+                              <h5>Soul Eater - Vol.9</h5>
+                              <div class="custo mt-3 text-dark">
+                                    <span>7.00€</span>
+                              </div>
+                              <div class="p-2 addcesto text-center mt-3">
+                                    <span class="text-uppercase">Adicionar ao cesto</span>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <div class="col-md-3 col-12 mt-md-5">
+                  <div class="card cardview">
+                        <div class="produtoView align-items-center p-2 text-center">
+                              <span class="fas fa-heart fa-2x fav"></span>
+                              <img src="imgs/mangaIdentico4.jpg" alt="manga MobPsycho 100" class="img-fluid imageview">
+                              <h5>M. Psycho 100 - Vol.3</h5>
+                              <div class="custo mt-3 text-dark">
+                                    <span>9.50€</span>
+                              </div>
+                              <div class="p-2 addcesto text-center mt-3">
+                                    <span class="text-uppercase">Adicionar ao cesto</span>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3"></div> <!-- alinhar cards 1-->
+
+            <!--3 linha de produtos -->
+            <div class="col-md-3 col-12 mt-md-5">
+                  <div class="card cardview">
+                        <div class="produtoView align-items-center p-2 text-center">
+                              <span class="fas fa-heart fa-2x fav"></span>
+                              <img src="imgs/mangaIdentico5.jfif" alt="AoT" class="img-fluid imageview">
+                              <h5>Attack On Titan - Vol.1</h5>
+                              <div class="custo mt-3 text-dark">
+                                    <span>7.00€</span>
+                              </div>
+                              <div class="p-2 addcesto text-center mt-3">
+                                    <span class="text-uppercase">Adicionar ao cesto</span>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <div class="col-md-3 col-12 mt-md-5">
+                  <div class="card cardview">
+                        <div class="produtoView align-items-center p-2 text-center">
+                              <span class="fas fa-heart fa-2x fav"></span>
+                              <img src="imgs/mangahorimiya.jfif" alt="AoT" class="img-fluid imageview">
+                              <h5>Horimiya - Vol.1</h5>
+                              <div class="custo mt-3 text-dark">
+                                    <span>7.00€</span>
+                              </div>
+                              <div class="p-2 addcesto text-center mt-3">
+                                    <span class="text-uppercase">Adicionar ao cesto</span>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <div class="col-md-3 col-12 mt-md-5">
+                  <div class="card cardview">
+                        <div class="produtoView align-items-center p-2 text-center">
+                              <span class="fas fa-heart fa-2x fav"></span>
+                              <img src="imgs/mangaPromised.jfif" alt="Promised Neverland" class="img-fluid imageview">
+                              <h5>P. Neverland - Vol.4</h5>
+                              <div class="custo mt-3 text-dark">
+                                    <span>8.00€</span>
+                              </div>
+                              <div class="p-2 addcesto text-center mt-3">
+                                    <span class="text-uppercase">Adicionar ao cesto</span>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <!--Anterior/próxima página-->
+            <div class="container-fluid text-center mt-5">
+            <a href="Manga.html" class="previous redondo">&#8249;</a>
+            <a href="MangaDois.html" class="next redondo">&#8250;</a>
+            </div>
+
+      </div>
+</div>
+
+
+<div class="navbar bg-light container-fluid fixed-bottom d-sm-none shadow-lg">
+      <div class="col-6 text-left">
+            <a href="CestoCompras.html">
+                  <i class="fas fa-shopping-bag icones px-2"></i>
+            </a>
+      </div>
+      <div class="col-6 text-right">
+            <a href="Login.html">
+                  <i class="fas fa-user icones px-2"></i>
+            </a>
+      </div>
+</div>
+
+            <!-- Footer -->
+            <footer class="footer mt-5">
+                  <div class="container">
+                        <div class="row">
+                              <div class="footer-col">
+                                    <h4>ANIMART</h4>
+                                    <ul>
+                                          <a style="color: white">Loja online de venda de mangás e arte relativa a
+                                                anime.</a>
+                                    </ul>
+                              </div>
+                              <div class="footer-col">
+                                    <h4>Ligações Rápidas</h4>
+                                    <ul>
+                                          <li><a href="Manga.html">Mangás</a></li>
+                                          <li><a href="Arte.html">Arte</a></li>
+                                          <li><a href="Requisição.html">Requisição personalizada</a></li>
+                                    </ul>
+                              </div>
+                              <div class="footer-col">
+                                    <h4>Segue-nos!</h4>
+                                    <div class="social-links">
+                                          <a><i class="fab fa-facebook-f"></i></a>
+                                          <a href="https://www.instragram.com/franciscoelabreu"><i
+                                                  class="fab fa-instagram"></i></a>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </footer>
+
+
+            <!-- jQuery 3.5.1 -->
+            <script src="js/jquery-3.5.1.slim.min.js"></script>
+            <!--Popper 2.9.2 -->
+            <script src="js/popper.min.js"></script>
+            <!-- Bootstrap v4.6.0 -->
+            <script src="js/bootstrap.min.js"></script>
+
+            <!--Colocar aqui as ligações para outros ficheiros de JavaScript-->
+<script>
+      $(document).ready(function () {
+            //
+            $('.fav').on('click', function (event) {
+                  const $target = $(event.target);
+                  if ($target.is('.fav-checked')){
+                        $target.removeClass('fav-checked');
+                  } else{
+                        $target.addClass('fav-checked');
+
+                  }
+            });
+      })
+</script>
+</body>
+</html>
+
+<script>
+    // Colocar aqui eventuais códigos JavaScript/jQuery
+
+</script>

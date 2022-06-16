@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+      <meta charset="UTF-8">
+      <meta content="Francisco Abreu" name="author">
+      <meta content="Anime, mangá, shop, online, art" name="keywords">
+      <meta content="Loja online onde pode comprar mangás e arte relativa a anime." name="description">
+
+      <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+      <!-- Bootstrap v4.6.0 -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- Font Awesome Free 5.15.3 -->
+      <link href="fontawesome-free/css/all.css" rel="stylesheet">
+
+      <!-- Colocar aqui a ligação para outros ficheiros de CSS necessários-->
+      <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+
+
+
+
+
+
+
+
+      <!-- ficheiro de estilos definidos pela equipa ou por terceiros e necessários ao funcionamento-->
+      <link href="css/os_meus_estilos.css" rel="stylesheet">
+
+      <title>Animart/Cesto de compras</title>
+</head>
+<body>
+
+<!-- Barra de Navegação topo -->
+<div class="navbar bg-light container-fluid fixed-top shadow-lg">
+      <div class="col-6">
+            <a href="index.html">
+                  <img src="imgs/logo.png" alt="Logo">
+            </a>
+      </div>
+      <div class="col-6 text-right mt-3">
+            <form id="searchform" method="get" action="index.html"></form>
+            <label>
+                  <input class="no-outline" type="search" placeholder="pesquisa" size="8" maxlength="30"/>
+            </label>
+            <i class="fas fa-search icones pl-1 pl-sm-1"></i>
+
+            <a href="CestoCompras.html">
+                  <i class="fas fa-shopping-bag icones px-2 d-none d-sm-inline"></i>
+            </a>
+
+            <a href="Login.html">
+                  <i class="fas fa-user icones px-2 d-none d-sm-inline"></i>
+            </a>
+      </div>
+</div>
+
+<!--Card artigos -->
+<div class="card centrarcart">
+      <div class="row">
+            <div class="col-md-8 cart">
+                  <div class="title">
+                        <div class="row">
+                              <div class="col-12">
+                                    <h4><b>Cesto de compras</b></h4>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="row border-top border-bottom">
+                        <div class="row main align-items-center">
+                              <div class="col-2"><img class="img-fluid" src="imgs/mangaBoku.jfif" alt="mangá boku"></div>
+                              <div class="col">
+                                    <div class="row text-muted">Mangás</div>
+                                    <div class="row">Boku no hero - Vol. 15</div>
+                              </div>
+                              <div class="col-6"> <a href="#" class="mr-2">-</a><a href="#">1</a><a href="#" class="ml-2">+</a> </div>
+                              <div class="col-12">&euro; 10.00 <span class="close">Remover &#10005;</span></div>
+                        </div>
+                  </div>
+                  <div class="row">
+                        <div class="row main align-items-center">
+                              <div class="col-2"><img class="img-fluid" src="imgs/arteVash.webp" alt="Tela Vash"></div>
+                              <div class="col">
+                                    <div class="row text-muted">Arte</div>
+                                    <div class="row">Tela de Vash</div>
+                              </div>
+                              <div class="col-6"> <a href="#" class="mr-2">-</a><a href="#">1</a><a href="#" class="ml-2">+</a> </div>
+                              <div class="col-12">&euro; 400.00 <span class="close">Remover &#10005;</span></div>
+                        </div>
+                  </div>
+                  <div class="back-to-shop"><a href="index.html">&leftarrow;</a><span class="text-muted">Continuar a comprar</span></div>
+            </div>
+            <div class="col-md-4 detalhes">
+                  <div class="title">
+                        <div class="row">
+                              <div class="col-12">
+                                    <h4><b>Detalhes</b></h4>
+                              </div>
+                        </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                        <div class="col-12 text-left">2 Artigos</div>
+                  </div>
+                  <form class="formcart mt-3">
+                        <div class="col-12 text-left">
+                              <p>SHIPPING</p>
+                              <label>
+                                    <select class="selectcart">
+                                          <option class="text-muted">CTT - &euro;2.50</option>
+                                    </select>
+                              </label>
+                        </div>
+                        <div class="col-12 text-left">
+                              <p>Código promocional</p> <label for="code"></label>
+                              <input id="code" class="col-12" placeholder="Introduza o código">
+                        </div>
+                  </form>
+                  <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                        <div class="col-6 text-left">Total:</div>
+                        <div class="col-6 text-right">&euro;410.00</div>
+                  </div> <button class="btncart">CONCLUIR COMPRA</button>
+            </div>
+      </div>
+</div>
+
+
+
+
+<!--Favoritos-->
+<section>
+      <h1 class="textoarrivals text-sm-center text-md-left">Os seus favoritos</h1>
+
+      <div class="your-class pt-2 items">
+            <div class="containercompra">
+                  <img src="imgs/arteGon.webp" alt="art gon" class="image">
+                  <div class="middle">
+                              <div class="text">Adicionar</div>
+                  </div>
+            </div>
+
+            <div class="containercompra">
+                  <img src="imgs/mangaKimetsu.jfif" alt="Mangá Kimetsu no yaiba" class="image">
+                  <div class="middle">
+                        <div class="text">Adicionar</div>
+                  </div>
+            </div>
+
+            <div class="containercompra">
+                  <img src="imgs/mangaJujutsu.jfif" alt="Mangá Jujutsu Kaisen" class="image">
+                  <div class="middle">
+                        <div class="text">Adicionar</div>
+                  </div>
+            </div>
+
+            <div class="containercompra">
+                  <img src="imgs/arteLevi.webp" alt="Woodcut Levi" class="image">
+                  <div class="middle">
+                        <div class="text">Adicionar</div>
+                  </div>
+            </div>
+
+            <div class="containercompra">
+                  <img src="imgs/mangaTokyo.jpg" alt="Mangá Tokyo Ghoul" class="image">
+                  <div class="middle">
+                        <div class="text">Adicionar</div>
+                  </div>
+            </div>
+
+            <div class="containercompra">
+                  <img src="imgs/arteQueen.webp" alt="Art Queen" class="image">
+                  <div class="middle">
+                        <div class="text">Adicionar</div>
+                  </div>
+            </div>
+
+            <div class="containercompra">
+                  <img src="imgs/mangahorimiya.jfif" alt="Mangá Horimiya" class="image">
+                  <div class="middle">
+                        <div class="text">Adicionar</div>
+                  </div>
+            </div>
+
+            <div class="containercompra">
+                  <img src="imgs/mangaOnepunch.jfif" alt="Mangá One Punch Man" class="image">
+                  <div class="middle">
+                        <div class="text">Adicionar</div>
+                  </div>
+            </div>
+
+            <div class="containercompra">
+                  <img src="imgs/mangaOnepiece.jfif" alt="Mangá One Piece" class="image">
+                  <div class="middle">
+                        <div class="text">Adicionar</div>
+                  </div>
+            </div>
+      </div>
+</section>
+
+      <!-- Barra de Navegação fundo -->
+      <div class="navbar bg-light container-fluid fixed-bottom d-sm-none shadow-lg">
+            <div class="col-6 text-left">
+                  <a href="CestoCompras.html">
+                        <i class="fas fa-shopping-bag icones px-2"></i>
+                  </a>
+            </div>
+            <div class="col-6 text-right">
+                  <a href="Login.html">
+                        <i class="fas fa-user icones px-2"></i>
+                  </a>
+            </div>
+      </div>
+
+
+
+
+<!-- Footer -->
+<footer class="footer mt-5">
+      <div class="container">
+            <div class="row">
+                  <div class="footer-col">
+                        <h4>ANIMART</h4>
+                        <ul>
+                              <a style="color: white">Loja online de venda de mangás e arte relativa a anime.</a>
+                        </ul>
+                  </div>
+                  <div class="footer-col">
+                        <h4>Ligações Rápidas</h4>
+                        <ul>
+                              <li><a href="Manga.html">Mangás</a></li>
+                              <li><a href="Arte.html">Arte</a></li>
+                              <li><a href="Requisição.html">Requisição personalizada</a></li>
+                        </ul>
+                  </div>
+                  <div class="footer-col">
+                        <h4>Segue-nos!</h4>
+                        <div class="social-links">
+                              <a><i class="fab fa-facebook-f"></i></a>
+                              <a href="https://www.instragram.com/franciscoelabreu"><i class="fab fa-instagram"></i></a>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</footer>
+
+
+
+
+
+
+
+<!-- jQuery 3.5.1 -->
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<!--Popper 2.9.2 -->
+<script src="js/popper.min.js"></script>
+<!-- Bootstrap v4.6.0 -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Slick -->
+<script src="js/slick.min.js"></script>
+<!--Colocar aqui as ligações para outros ficheiros de JavaScript-->
+
+
+
+</body>
+</html>
+
+<script>
+    // Colocar aqui eventuais códigos JavaScript/jQuery
+    $('.your-class').slick({
+          dots: true,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          responsive: [
+                {
+                      breakpoint: 1024,
+                      settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                      }
+                },
+                {
+                      breakpoint: 600,
+                      settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                      }
+                },
+                {
+                      breakpoint: 480,
+                      settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                      }
+                }
+          ]
+    });
+
+</script>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta content="Francisco Abreu" name="author">
+    <meta content="Anime, mangá, shop, online, art" name="keywords">
+    <meta content="Loja online onde pode comprar mangás e arte relativa a anime." name="description">
+
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <!-- Bootstrap v4.6.0 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Free 5.15.3 -->
+    <link href="fontawesome-free/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+
+
+
+    <!-- ficheiro de estilos definidos pela equipa ou por terceiros e necessários ao funcionamento-->
+    <link href="css/os_meus_estilos.css" rel="stylesheet">
+
+    <title>Animart</title>
+</head>
+<body>
+
+<!-- Barra de Navegação topo -->
+<div class="navbar bg-light container-fluid fixed-top shadow-lg">
+    <div class="col-6">
+        <a href="index.html">
+            <img src="imgs/logo.png" alt="Logo">
+        </a>
+    </div>
+    <div class="col-6 text-right mt-3">
+        <form id="searchform" method="get" action="index.html"></form>
+        <label>
+            <input class="no-outline" type="search" placeholder="pesquisa" size="8" maxlength="30"/>
+        </label>
+        <i class="fas fa-search icones pl-1 pl-sm-1"></i>
+        <a href="CestoCompras.html">
+            <i class="fas fa-shopping-bag icones px-2 d-none d-sm-inline"></i>
+        </a>
+
+        <a href="Login.html">
+            <i class="fas fa-user icones px-2 d-none d-sm-inline"></i>
+        </a>
+    </div>
+</div>
+
+
+
+<!-- Split screen Mangá/Arte -->
+<div class="wrapper">
+
+    <div class="side left">
+        <div class="image manga"></div>
+        <div class="caption">
+            <h1>Mangá</h1>
+            <a class="button" href="Manga.html">Mangás disponíveis</a>
+        </div>
+    </div>
+
+    <div class="side right">
+        <div class="image arte"></div>
+        <div class="caption">
+            <h1>Arte</h1>
+            <a class="button" href="Arte.html">Arte disponível</a>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Carousel New Arrivals Mangá -->
+<section>
+    <h1 class="textoarrivals text-sm-center text-md-left">Novidades | Mangás</h1>
+
+    <div class="your-class pt-2 items">
+        <div class="containercompra">
+            <img src="imgs/mangaBoku.jfif" alt="Mangá Boku no hero" class="image">
+            <div class="middle">
+                <a href="ProdutoMangá.html">
+                    <div class="text">Comprar</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="containercompra">
+            <img src="imgs/mangaKimetsu.jfif" alt="Mangá Kimetsu no yaiba" class="image">
+            <div class="middle">
+                <div class="text">Comprar</div>
+            </div>
+        </div>
+
+        <div class="containercompra">
+            <img src="imgs/mangaJujutsu.jfif" alt="Mangá Jujutsu Kaisen" class="image">
+            <div class="middle">
+                <div class="text">Comprar</div>
+            </div>
+        </div>
+
+        <div class="containercompra">
+            <img src="imgs/mangaBleach.jfif" alt="Mangá Bleach" class="image">
+            <div class="middle">
+                <div class="text">Comprar</div>
+            </div>
+        </div>
+
+        <div class="containercompra">
+            <img src="imgs/mangaTokyo.jpg" alt="Mangá Tokyo Ghoul" class="image">
+            <div class="middle">
+                <div class="text">Comprar</div>
+            </div>
+        </div>
+
+        <div class="containercompra">
+            <img src="imgs/mangaaot.jfif" alt="Mangá Attack on Titan" class="image">
+            <div class="middle">
+                <div class="text">Comprar</div>
+            </div>
+        </div>
+
+        <div class="containercompra">
+            <img src="imgs/mangahorimiya.jfif" alt="Mangá Horimiya" class="image">
+            <div class="middle">
+                <div class="text">Comprar</div>
+            </div>
+        </div>
+
+        <div class="containercompra">
+            <img src="imgs/mangaOnepunch.jfif" alt="Mangá One Punch Man" class="image">
+            <div class="middle">
+                <div class="text">Comprar</div>
+            </div>
+        </div>
+
+        <div class="containercompra">
+            <img src="imgs/mangaOnepiece.jfif" alt="Mangá One Piece" class="image">
+            <div class="middle">
+                <div class="text">Comprar</div>
+            </div>
+        </div>
+
+        <div class="containercompra">
+            <img src="imgs/mangaSouleater.jfif" alt="Mangá Soul Eater" class="image">
+            <div class="middle">
+                <div class="text">Comprar</div>
+            </div>
+        </div>
+
+        <div class="containercompra">
+            <img src="imgs/mangaPromised.jfif" alt="Mangá Promised Neverland" class="image">
+            <div class="middle">
+                <div class="text">Comprar</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--Requisição de uma obra-->
+<section class="RequestWrapper col-12">
+    <div>
+        <div class="req">
+            <a class="button" href="Requisição.html">Requisite uma obra</a>
+        </div>
+    </div>
+</section>
+
+<!--Carousel New Arrivals Arte -->
+<section>
+        <h1 class="textoarrivals text-sm-center text-md-left col-12">Novidades | Arte</h1>
+
+        <div class="your-class pt-2 items">
+            <div class="containercompra">
+                    <img src="imgs/arteVash.webp" alt="Artwork Vash" class="image">
+
+                <div class="middle">
+                    <a href="ProdutoArte.html">
+                        <div class="text">Comprar</div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="containercompra">
+                <img src="imgs/arteGon.webp" alt="Artwork Gon" class="image">
+                <div class="middle">
+                    <div class="text">Comprar</div>
+                </div>
+            </div>
+
+            <div class="containercompra">
+                <img src="imgs/arteQueen.webp" alt="Artwork Queen" class="image">
+                <div class="middle">
+                    <div class="text">Comprar</div>
+                </div>
+            </div>
+
+            <div class="containercompra">
+                <img src="imgs/arteGirl.webp" alt="Artwork Girl" class="image">
+                <div class="middle">
+                    <div class="text">Comprar</div>
+                </div>
+            </div>
+
+            <div class="containercompra">
+                <img src="imgs/arteLevi.webp" alt="Artwork Levi" class="image">
+                <div class="middle">
+                    <div class="text">Comprar</div>
+                </div>
+            </div>
+
+            <div class="containercompra">
+                <img src="imgs/arteNezuko.jpg" alt="Artwork Nezuko" class="image">
+                <div class="middle">
+                    <div class="text">Comprar</div>
+                </div>
+            </div>
+
+            <div class="containercompra">
+                <img src="imgs/arteDB.webp" alt="Artwork DB" class="image">
+                <div class="middle">
+                    <div class="text">Comprar</div>
+                </div>
+            </div>
+
+            <div class="containercompra">
+                <img src="imgs/arteTanjiro.webp" alt="Artwork Tanjiro" class="image">
+                <div class="middle">
+                    <div class="text">Comprar</div>
+                </div>
+            </div>
+
+            <div class="containercompra">
+                <img src="imgs/arteBoku.webp" alt="Artwork boku" class="image">
+                <div class="middle">
+                    <div class="text">Comprar</div>
+                </div>
+            </div>
+
+            <div class="containercompra">
+                <img src="imgs/arteAni.webp" alt="Artwork Ani" class="image">
+                <div class="middle">
+                    <div class="text">Comprar</div>
+                </div>
+            </div>
+
+            <div class="containercompra">
+                <img src="imgs/arteGuy.webp" alt="Artwork Guy" class="image">
+                <div class="middle">
+                    <div class="text">Comprar</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<!-- testemunhas -->
+<div class="testemunhas">
+    <div class="inner">
+        <h1>O que os nossos clientes dizem</h1>
+        <div class="border"></div>
+
+        <div class="row align-items-stretch">
+            <div class="col-12 col-md-4">
+                <div class="testemunho">
+                    <img src="imgs/testimonial.svg" alt="testemunho">
+                    <div class="nome">Alberto Caeiro</div>
+                    <div class="estrelas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p style="color: white">
+                        Um site e um processo de entrega bastante simples, recomendo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="testemunho">
+                    <img src="imgs/testimonial.svg" alt="testemunho">
+                    <div class="nome">Álvaro de Campos</div>
+                    <div class="estrelas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p style="color: white">
+                         O animart entusiasmou-me pela modernidade!
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="testemunho">
+                    <img src="imgs/testimonial.svg" alt="testemunho">
+                    <div class="nome">Ricardo Reis</div>
+                    <div class="estrelas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p style="color: white">
+                        Demasiado moderno. Prefiro o registo de entrega tradicional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Consentimento Cookies -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content modaledit">
+            <div class="modal-header">
+                <h4 class="modal-title">Consentimento de uso de Cookies</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5>Porque é que usamos cookies?</h5>
+                <p>Usamos os cookies e outras tecnologias para reconhecer as suas repetidas visitas e as suas preferências, assim como para análise de tráfego, melhorando a sua experiência no nosso website.</p>
+                <p>Ao navegar no site está a consentir a sua utilização.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info mx-auto" data-dismiss="modal">Eu concordo</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Barra de Navegação fundo -->
+<div class="navbar bg-light container-fluid fixed-bottom d-sm-none shadow-lg fixed-bottom">
+    <div class="col-6 text-left">
+        <a href="CestoCompras.html">
+            <i class="fas fa-shopping-bag icones px-2"></i>
+        </a>
+    </div>
+    <div class="col-6 text-right">
+        <a href="Login.html">
+            <i class="fas fa-user icones px-2"></i>
+        </a>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="footer mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>ANIMART</h4>
+                <ul>
+                    <a style="color: white">Loja online de venda de mangás e arte relativa a anime.</a>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Ligações Rápidas</h4>
+                <ul>
+                    <li><a href="Manga.html">Mangás</a></li>
+                    <li><a href="Arte.html">Arte</a></li>
+                    <li><a href="Requisição.html">Requisição personalizada</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Segue-nos!</h4>
+                <div class="social-links">
+                    <a><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instragram.com/franciscoelabreu"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- jQuery 3.5.1 -->
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<!--Popper 2.9.2 -->
+<script src="js/popper.min.js"></script>
+<!-- Bootstrap v4.6.0 -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Slick -->
+<script src="js/slick.min.js"></script>
+<!-- cookies -->
+<script src="js/cookies.js"></script>
+
+<!--Colocar aqui as ligações para outros ficheiros de JavaScript-->
+<script>
+    $('.your-class').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+</script>
+</body>
+</html>
+
+
